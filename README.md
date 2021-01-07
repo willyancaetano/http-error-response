@@ -6,6 +6,8 @@ Exemplo de como construir um mecanismo de uso do padrão da [RFC 7807](https://t
 
 ### Como foi feito
 
+Swagger: http://localhost:8080/swagger-ui/index.html
+
 * HTTP Status Code 4XX e 5XX são representados por Exceptions Runtime
 `public class BadRequestException extends HttpResponseException {`
 
