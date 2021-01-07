@@ -13,7 +13,9 @@ Exemplo de como construir um mecanismo de uso do padrão da [RFC 7807](https://t
 * O chamador para montar precisa apenas lançar a Exception com os dados que deseja a apresentar no response, considerando os detalhes da RFC, exemplos:
 
 	* Sem passar field `instance`
+	
 `throw new ConflictException("Usuario já existe", Optional.empty(), Resources.USERS);`
 	* Passando field `instance`
+	
 `throw new BadRequestException("Dados inválidos", Optional.of(List.of("id", "name", "age")), Resources.USERS);`
 
